@@ -6,7 +6,7 @@ import { increment, decrement} from "./actions"
 class Counter extends Component{
   render(){
   return( 
-        <p>Contador: {this.state.count}
+        <p>Contador: {this.props.count}
          <button onClick={this.props.increment} >+</button> 
          <button onClick={this.props.decrement} >-</button> 
         </p>    
@@ -21,7 +21,7 @@ const mapStatetoProps = (state) =>{
   }
 }
 
-const mapDispatchtoProps = (dispatch) =>{
+const mapDispatchToProps = (dispatch) =>{
    return{
        increment: ()=> dispatch(increment),
        decrement: ()=> dispatch(decrement)
@@ -29,4 +29,4 @@ const mapDispatchtoProps = (dispatch) =>{
 }
 
 
-export default connect(mapStatetoProps, mapDispatchtoProps)(Counter)
+export default connect(mapStatetoProps, mapDispatchToProps)(Counter)
