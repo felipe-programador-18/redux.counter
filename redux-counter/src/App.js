@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { applyMiddleware ,createStore } from "redux"
+import {createStore } from "redux"
 import Counter from "./counter"
 import counterReducer from "./reducer"
 import {Provider} from 'react-redux'
