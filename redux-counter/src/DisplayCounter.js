@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
-const DisplayCounter = ({count}) =>{
+
+ export const DisplayCounter = ({count}) =>{
   return <p>O Contador esta em : {count} </p>
 }
 
