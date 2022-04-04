@@ -1,6 +1,5 @@
 import { increment, decrement } from "./actions"
-
-
+// create situation of test with actions
 test("action: increment", () => {
     let incr = increment(3)
     expect(incr).toEqual({
