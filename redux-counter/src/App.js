@@ -4,12 +4,11 @@ import Counter from "./counter"
 import counterReducer from "./reducer"
 import {Provider} from 'react-redux'
 import DisplayCounter from './DisplayCounter'
-import logger from 'redux-logger'
+
 
 let store = createStore(
   counterReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), 
-  applyMiddleware(logger)
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 )
 
